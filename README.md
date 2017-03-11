@@ -7,6 +7,8 @@ node app.js
 
 ### Configuration
 
+inside conf/ rename default.example.js to default.js
+
 | key   	| description                                	|
 |-------	|--------------------------------------------	|
 | port  	| port to run the server on. defaults to 80  	|
