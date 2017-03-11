@@ -18,15 +18,17 @@ const express = require('express'),
 const cache = {};
 
 function generateGUID(req, item) {
-	/* eslint no-param-reassign: off */
-	const guidCache = cache[req.id] || [];
+	if (!cache[req.id]) {
+		cache[req.id] = [];
+	}
+	const guidCache = cache[req.id];
 	let guid = item.guid[0]._;
 	if (guidCache.length && guidCache.indexOf(guid) > -1) {
 		// since we have more than one item based on this node we need a new guid
 		guid += `_rss2rss_${uuid.v4()}`;
 	}
 	// set the value in the cache
-	guidCache.push(guid);
+	cache[req.id].push(guid);
 	return guid;
 }
 
