@@ -7,7 +7,6 @@ const express = require('express'),
 	jsonpath = require('jsonpath'),
 	config = require('./conf/default'),
 	requestID = require('express-request-id')(),
-	uuid = require('uuid'),
 	app = express(),
 	builder = new xml2js.Builder({
 		renderOpts: {
@@ -22,10 +21,13 @@ function generateGUID(req, item) {
 		cache[req.id] = [];
 	}
 	const guidCache = cache[req.id];
-	let guid = item.guid[0]._;
-	if (guidCache.length && guidCache.indexOf(guid) > -1) {
+	const itemGUID = item.guid[0]._;
+	let guid = itemGUID;
+	let i = 0;
+	while (guidCache.length && guidCache.indexOf(guid) > -1) {
 		// since we have more than one item based on this node we need a new guid
-		guid += `_rss2rss_${uuid.v4()}`;
+		guid = `${itemGUID}_rss2rss_${i}`;
+		i++;
 	}
 	// set the value in the cache
 	cache[req.id].push(guid);
