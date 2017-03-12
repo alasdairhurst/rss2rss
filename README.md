@@ -1,6 +1,11 @@
 # rss2rss
 Express server which takes existing RSS feeds, applies transformations then re-hosts them.
 
+[![bitHound Overall Score](https://www.bithound.io/github/alasdairhurst/rss2rss/badges/score.svg)](https://www.bithound.io/github/alasdairhurst/rss2rss)
+[![bitHound Dependencies](https://www.bithound.io/github/alasdairhurst/rss2rss/badges/dependencies.svg)](https://www.bithound.io/github/alasdairhurst/rss2rss/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/alasdairhurst/rss2rss/badges/devDependencies.svg)](https://www.bithound.io/github/alasdairhurst/rss2rss/master/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/alasdairhurst/rss2rss/badges/code.svg)](https://www.bithound.io/github/alasdairhurst/rss2rss)
+
 ## How to use
 
 node app.js
