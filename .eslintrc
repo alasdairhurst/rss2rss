@@ -8,6 +8,7 @@
 		"no-tabs": "off",
 		"comma-dangle": "off",
 		"one-var": "off",
-		"consistent-return": "off"
+		"consistent-return": "off",
+		"no-plusplus": "off"
 	}
 }
