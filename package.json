@@ -1,6 +1,6 @@
 {
   "name": "rss2rss",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "server which hosts a filtered version of existing rss feeds",
   "main": "rss2rss.js",
   "scripts": {
@@ -16,9 +16,9 @@
     "rss",
     "express"
   ],
-	"bin": {
-		"rss2rss": "./bin/rss2rss"
-	},
+  "bin": {
+    "rss2rss": "./bin/rss2rss"
+  },
   "author": "Alasdair Hurst",
   "license": "MIT",
   "bugs": {
