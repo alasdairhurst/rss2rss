@@ -1,6 +1,6 @@
 {
   "name": "rss2rss",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "server which hosts a filtered version of existing rss feeds",
   "main": "rss2rss.js",
   "scripts": {
