@@ -1,10 +1,10 @@
 {
   "name": "rss2rss",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "server which hosts a filtered version of existing rss feeds",
-  "main": "app.js",
+  "main": "rss2rss.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./lib/app.js",
     "lint": "eslint ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +16,9 @@
     "rss",
     "express"
   ],
+	"bin": {
+		"rss2rss": "./bin/rss2rss"
+	},
   "author": "Alasdair Hurst",
   "license": "MIT",
   "bugs": {
